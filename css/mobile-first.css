@@ -9,6 +9,23 @@
     
 }
 
+nav 
+{
+    background-color: var(--secondary-color);
+    padding: 20px;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navlinks
+{
+    color: var(--primary-color);
+    text-decoration: none;
+
+}
+
 footer
 {
 display: flex;

@@ -1,5 +1,12 @@
+@import "mobile-first.css";
+
+
 @media screen and (min-width: 720px) 
 {
-    
+  nav .navlinks:hover
+  {
+    transition: all .2s linear;
+    color: green;
+  }  
 
 }
