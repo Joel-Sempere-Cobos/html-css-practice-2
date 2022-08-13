@@ -19,7 +19,8 @@
 }
 
 
-.respmenu a 
+
+.respmenu .navlinks 
 {
     color: var(--primary-color);
     text-decoration: none;
@@ -28,7 +29,6 @@
     margin: 5px;
     border-radius: 5px;
     max-width: 200px;
-    background: var(--text-color);
 }
 
 
@@ -62,16 +62,24 @@
     margin: 10px;
 }
   
-.respmenu nav 
+.respmenu .menu nav 
 {
     display: none;
 }
   
-.respmenu input:checked ~ nav 
-{   
-    display: block;
-    background-color: green;
-}
+.respmenu input:checked ~ nav
+
+{
+    background-color: var(--secondary-color);
+    position: sticky;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+/*     transition: all 1s ease-in-out;
+ */}
+
+
   
 .respmenu input:checked ~ .burguer-icon 
 {
@@ -83,23 +91,6 @@
     display: none;
 }
 
-
-nav 
-{
-    background-color: var(--secondary-color);
-    padding: 20px;
-    position: sticky;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.navlinks
-{
-    color: var(--primary-color);
-    text-decoration: none;
-
-}
 
 
 
