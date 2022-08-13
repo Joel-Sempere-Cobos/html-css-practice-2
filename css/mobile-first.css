@@ -3,9 +3,9 @@
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
     --primary-color: #69ffeb;
-    --secondary-color: #002848;
-    --text-color: #333;
-    --background-color: #ddd;
+    --secondary-color: #003c6d;
+    --text-color: #69ffeb;
+    --background-color: #003c6d;
 }
 
 
@@ -53,7 +53,7 @@
 {
     color: white;
     position: relative;
-    background: #123456;
+    background: var(--secondary-color);
     min-height: 48px;
 }
 
