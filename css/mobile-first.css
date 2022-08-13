@@ -1,0 +1,10 @@
+:root{
+
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    --primary-color: #69ffeb;
+    --secondary-color: #002848;
+    --text-color: #333;
+    --background-color: #ddd;
+    
+}
