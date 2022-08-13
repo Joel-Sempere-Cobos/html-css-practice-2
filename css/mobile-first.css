@@ -1,13 +1,88 @@
-:root{
-
+:root
+{
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
     --primary-color: #69ffeb;
     --secondary-color: #002848;
     --text-color: #333;
     --background-color: #ddd;
-    
 }
+
+
+
+
+/* MENU SUPERIOR Y NAVBAR */
+
+.respmenu lu
+{
+    list-style-type: none;
+}
+
+
+.respmenu a 
+{
+    color: var(--primary-color);
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    max-width: 200px;
+    background: var(--text-color);
+}
+
+
+.respmenu input[type="checkbox"], .respmenu .menu div .burguer-icon, .respmenu .menu div .x-icon 
+{
+    position: sticky;
+    margin: 10px;
+    padding: 0;
+    right: 0;
+    top: 0;
+    max-width: 48px;
+    max-height: 48px;
+}
+
+  
+.respmenu input[type="checkbox"] 
+{
+    display: none;
+}
+  
+.respmenu 
+{
+    color: white;
+    position: relative;
+    background: #123456;
+    min-height: 48px;
+}
+
+.respmenu div img{
+    max-height: 48px;
+    margin: 10px;
+}
+  
+.respmenu nav 
+{
+    display: none;
+}
+  
+.respmenu input:checked ~ nav 
+{   
+    display: block;
+    background-color: green;
+}
+  
+.respmenu input:checked ~ .burguer-icon 
+{
+    display: none;
+}
+  
+.respmenu input:not(:checked) ~ .x-icon 
+{
+    display: none;
+}
+
 
 nav 
 {
@@ -25,6 +100,12 @@ nav
     text-decoration: none;
 
 }
+
+
+
+
+
+/* FOOTER */
 
 footer
 {
