@@ -26,8 +26,6 @@
 </head>
 <body>
 
-    <!-- Barra de navegación con links a cada elemento del protfolio. Todos los links tendrán que tener el estado hover suavizado con una transición. Estos links no son necesarios en la versión mobile como viene en los anexos. (Opcional) Se puede hacer un menu burger con solo CSS y un input checkbox, para no usar JS pero eso es bastante avanzado. -->
-
     <div class="respmenu">
         <label class="menu">
             <input type="checkbox">
@@ -46,6 +44,23 @@
     </div>
 
     <header>
+        <figure class= "header-img">
+            <picture>
+                <source
+                    srcset="media/joel-1.jpg"
+                    media="(min-width: 800px)"
+                >
+
+                <source
+                    srcset="media/joel-2.jpg"
+                    media="(min-width: 600px)"
+                >
+
+                <img src="media/joel-3.jpg" alt="Joël Sempere">
+
+            </picture>
+        </figure>
+
 
         <!-- Header deberá tener 1 imagen de fondo, optimizada para distintas resoluciones. En pantallas moviles deberá ser otra para darle más sentido al diseño en esta resolución -->
 
