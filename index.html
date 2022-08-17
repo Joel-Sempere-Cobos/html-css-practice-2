@@ -95,33 +95,136 @@
     <!-- SKILLS -->
 
     <section class="skills-section">
-        <!-- Una sección con nuestras skill de programación y progreso de las mismas. Esta sección tiene que contar con barras de progreso animadas con animaciones css -->
+        <h2>My skills</h2>
+        <div>
+            <label for="git">Git</label>
+            <div class="animation-css bars"></div>
+        </div>
+        <div>
+            <label for="HTML">HTML</label>
+            <div class="animation-css bars"></div>
+        </div>
+        <div>
+            <label for="css">CSS</label>
+            <div class="animation-css bars"></div>
+        </div>
+        <div>
+            <label for="js">JS</label>
+            <div class="animation-css bars"></div>
+        </div>
 
     </section>
+
+    <!-- FORMULARIO -->
     <section class="form-section">
-        <!-- Formulario de contacto con estos inputs. Todos ellos tienen que tener tanto los tipos correctos como la validación html de cada input.
-            ○ Nombre - (requerido)
-            ○ Apellidos - (requerido)
-            ○ Telefono - (requerido)
-            ○ Unos radio button para responder a la pregunta "¿como me conociste?"  -(requerido)
-                ■ Universidad
-                ■ Keepcoding kick-off
-                ■ Colegio
-                ■ En Github○Tag de github (Usar regexp para la validación - @username)
-            ○ descripción (max 180 characters)  - (requerido)
-            ○ Boton de guardado -->
-
         <form action="" method="post">
+            <div>
+                <label for="firstname">Nombre</label>
+                <input 
+                    class="form-input" 
+                    type="text" 
+                    required 
+                    id="firstname" 
+                    name="firstname"
+                    pattern="[A-z]+"
+                >
+            </div>
+            <div>
+                <label for="lastname">Apellido/s</label>
+                <input 
+                    class="form-input"
+                    type="text"
+                    required
+                    id="lastname"
+                    name="lastname"
+                    pattern="[A-z]+"
+                >
+            </div>
 
-            
+            <div>
+                <label for="email">Email</label>
+                <input class="form-input"
+                    type="text" 
+                    required 
+                    id="email" 
+                    name="email"
+                    pattern=".+@.+\..+"
+                >
+            </div>
+    
+            <div>
+                <label for="tel">Teléfono</label>
+                <input class="form-input"
+                    type="tel" 
+                    required 
+                    id="tel"   
+                    name="tel"
+                    pattern="\+?[0-9]+"
+                >
+            </div>
+
+            <fieldset aria-required="true">
+                <legend>¿Cómo me conociste?</legend>
+                <div>
+                    <label for="universidad">Universidad</label>
+                    <input type="radio" id="universidad" name="know">
+                </div>
+
+                <div>
+                    <label for="keepcoding">Keep Coding</label>
+                    <input type="radio" id="keepcoding" name="know">
+                </div>
+                
+                <div>
+                    <label for="colegio">Colegio</label>
+                    <input type="radio" id="colegio" name="know">
+                </div>
+
+                <div>
+                    <label for="github">Github</label>
+                    <input type="radio" id="github" name="know">
+                </div>
+
+                <div>
+                    <label for="otros">Otros...</label>
+                    <input type="radio" id="otros" name="know">
+                </div>
+            </fieldset>
+
+            <div>
+                <label for="github-tag">Tag de Github</label>
+                <input 
+                    type="text"  
+                    id="github-tag" 
+                    name="github-tag"
+                    pattern="^@[^\s]+"
+                    title="@user-name"
+                    value="@"
+                    >
+            </div>
+            <div>
+                <label for="description">Descripción</label>
+                <textarea 
+                    name="description" 
+                    id="description" 
+                    cols="30" 
+                    rows="10" 
+                    maxlength="180" 
+                    required
+                    placeholder="Descripción"
+                >
+                </textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
 
         </form>
 
     </section>
 
-    <footer>
-        <!-- Footer con links a nuestras redes sociales. Importante tener en cuenta que son links a un recurso externo y tenemos no queremos dejar información nuestra en esas webs -->
 
+    <!-- FOOTER -->
+    <footer>
         <div class="footer-img">
             <a title="linkedin" href="https://www.linkedin.com/in/joel-sempere-cobos-b98122201/" rel="noopener noreferrer" target="_blank"><img src="media/linkedin logo.webp" alt="LinkedIn"></a>
         </div>
