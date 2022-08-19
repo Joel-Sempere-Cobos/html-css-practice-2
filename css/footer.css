@@ -1,0 +1,17 @@
+@import "main.css";
+
+footer
+{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.footer-img {
+    max-width: 50px;
+    margin: 5px;
+}
+
+.footer-img a img{
+    max-width: 100%;
+}

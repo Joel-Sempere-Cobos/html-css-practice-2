@@ -1,0 +1,16 @@
+@import "main.css";
+
+.header-img
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+
+@media screen and (min-width: 500px) 
+{
+  
+
+}

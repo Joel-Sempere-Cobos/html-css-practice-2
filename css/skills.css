@@ -1,0 +1,85 @@
+@import "main.css";
+
+.skills-section h2
+{
+font-size: 2em;
+display: flex;
+margin-top: 20px;
+margin-bottom: 30px;
+justify-content: center;
+font-weight: bold;
+}
+
+.skills-section .bar-container
+{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.skills-section div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.skills-section div label
+{
+    font-weight: bold;
+}
+
+.skills-section .bars
+{
+    display: block;
+    animation: skillbars 1s ease-in-out;
+    width: 100vw;
+    height: 30px;
+    border-radius: 50px;
+    border: 1px;
+    border-color: var(--background-color);
+    background-color: var(--background-color);
+    margin: 10px;
+}
+
+.w-80
+{
+    max-width: 80%;
+}
+
+.w-65
+{
+    max-width: 65%;
+}
+
+.w-50
+{
+    max-width: 50%;
+}
+
+.w-35
+{
+    max-width: 35%;
+}
+
+.w-15
+{
+    max-width: 15%;
+}
+
+@keyframes skillbars {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 500px) 
+{
+  
+
+}

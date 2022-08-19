@@ -13,9 +13,14 @@
 
     <link type="text/css" rel="stylesheet" href="./css/reset.css">
     <link type="text/css" rel="stylesheet" href="./css/normalize.css">
-    <link type="text/css" rel="stylesheet" href="./css/mobile-first.css">
-    <link type="text/css" rel="stylesheet" href="./css/tablet.css">
-    <link type="text/css" rel="stylesheet" href="./css/desktop.css">
+    <link type="text/css" rel="stylesheet" href="./css/main.css">
+    <link type="text/css" rel="stylesheet" href="./css/navbar.css">
+    <link type="text/css" rel="stylesheet" href="./css/header.css">
+    <link type="text/css" rel="stylesheet" href="./css/carousel.css">
+    <link type="text/css" rel="stylesheet" href="./css/skills.css">
+    <link type="text/css" rel="stylesheet" href="./css/form.css">
+    <link type="text/css" rel="stylesheet" href="./css/footer.css">
+    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -96,21 +101,23 @@
 
     <section class="skills-section">
         <h2>My skills</h2>
-        <div>
-            <label for="git">Git</label>
-            <div class="animation-css bars"></div>
-        </div>
-        <div>
-            <label for="HTML">HTML</label>
-            <div class="animation-css bars"></div>
-        </div>
-        <div>
-            <label for="css">CSS</label>
-            <div class="animation-css bars"></div>
-        </div>
-        <div>
-            <label for="js">JS</label>
-            <div class="animation-css bars"></div>
+        <div class="bar-container">
+            <div id="git">
+                <label for="git">Git</label>
+                <div class="animation-css bars w-50"></div>
+            </div>
+            <div id="html">
+                <label for="HTML">HTML</label>
+                <div class="animation-css bars w-35"></div>
+            </div>
+            <div id="css">
+                <label for="css">CSS</label>
+                <div class="animation-css bars w-15"></div>
+            </div>
+            <div id="js">
+                <label for="js">JS</label>
+                <div class="animation-css bars w-80"></div>
+            </div>
         </div>
 
     </section>
