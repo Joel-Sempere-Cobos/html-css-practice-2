@@ -1,0 +1,77 @@
+@import "/main.css";
+
+.form-section 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.form-section div
+{
+    margin: 20px;
+}
+
+.form-section label
+{
+    display: inline-block;
+    width: 80px;
+    font-weight: bold ;
+}
+
+.form-section div input , .form-section textarea
+{
+    
+    margin: 20px;
+    padding: 5px 20px;
+    border-color: var(--background-color);
+    border-radius: 20px;
+}
+
+/* .form-section fieldset #univesidad
+{
+    grid-area: "uni";
+}
+
+.form-section fieldset #keepconding
+{
+    grid-area: "keep";
+}
+.form-section fieldset #colegio
+{
+    grid-area: "cole";
+}
+.form-section fieldset #github
+{
+    grid-area: "git";
+}
+.form-section fieldset #otros
+{
+    grid-area: "otros";
+}
+
+.form-section fieldset 
+{
+    display: grid;
+    grid-template-areas: 
+    "uni, cole"
+    "keep, git"
+    "otros, otros";
+} */
+
+.form-section fieldset legend
+{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+
+.form-section #description
+{
+    display: flex;
+    align-items: center;
+}
