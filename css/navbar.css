@@ -21,7 +21,7 @@
 }
 
 
-.respmenu input[type="checkbox"], .respmenu .menu div .burguer-icon, .respmenu .menu div .x-icon 
+.respmenu input, .respmenu .menu div .burguer-icon, .respmenu .menu div .x-icon 
 {
     position: sticky;
     margin: 10px;
@@ -33,7 +33,7 @@
 }
 
   
-.respmenu input[type="checkbox"] 
+.respmenu input 
 {
     display: none;
 }
@@ -45,6 +45,14 @@
     background: var(--secondary-color);
     min-height: 48px;
     top: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.burguer-icon, .x-icon 
+{
+  display: flex;
+  justify-content: right;
 }
 
 .respmenu div img{
