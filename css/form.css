@@ -1,6 +1,6 @@
 @import "/main.css";
 
-.form-section 
+.form-section
 {
     display: flex;
     flex-direction: column;
@@ -31,41 +31,22 @@
     border-radius: 20px;
 }
 
-/* .form-section fieldset #univesidad
-{
-    grid-area: "uni";
-}
-
-.form-section fieldset #keepconding
-{
-    grid-area: "keep";
-}
-.form-section fieldset #colegio
-{
-    grid-area: "cole";
-}
-.form-section fieldset #github
-{
-    grid-area: "git";
-}
-.form-section fieldset #otros
-{
-    grid-area: "otros";
-}
-
 .form-section fieldset 
 {
     display: grid;
-    grid-template-areas: 
-    "uni, cole"
-    "keep, git"
-    "otros, otros";
-} */
+    grid-template-columns: repeat(2,1fr);
+}
+
+.form-section fieldset div
+{
+    margin: 0;
+}
 
 .form-section fieldset legend
 {
     font-size: 2rem;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 
@@ -74,4 +55,36 @@
 {
     display: flex;
     align-items: center;
+}
+
+.form-section .submit-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-section #submit-button
+{
+    border-radius: 20px;
+    padding: 5px 20px;
+    background-color: white;
+}
+
+
+
+
+
+/* ESCRITORIO */
+
+@media screen and (min-width: 720px) 
+{
+
+    .form-section #submit-button:hover
+    {
+        transition: all .2s linear;
+        background-color: var(--background-color);
+        color: white;
+    }
+
 }
